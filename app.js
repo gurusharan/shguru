@@ -56,6 +56,12 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+//add trivia questions to database
+/*app.get('/createtrivia', function(req, res){
+    console.log("I received a get request");
+    //res.json(createtrivia);
+});*/
+
 //Start Server
 app.listen(port, function(req, res){
     console.log('server started on port' + port);

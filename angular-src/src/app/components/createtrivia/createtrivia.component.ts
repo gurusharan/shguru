@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./createtrivia.component.css']
 })
 export class CreatetriviaComponent implements OnInit {
-  
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+ 
+ /*   function Createtrivia($scope){
+    console.log("Hello from create trivia js file");
+
+$http.get('createtrivia')
+
   Question1 = {
       question: 'who was the first person to walk on moon',
       category: 'science',
@@ -25,10 +36,8 @@ export class CreatetriviaComponent implements OnInit {
       difficulty: 'hard'
   };
 
-    
-  constructor() { }
-
-  ngOnInit() {
+    var createtrivia = [Question1, Question2, Question3];
+    $scope.createtrivia = createtrivia;
   }
-
+  */
 }
