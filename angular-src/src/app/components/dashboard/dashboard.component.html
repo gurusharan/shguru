@@ -1,0 +1,18 @@
+<h2 class = "page-header"> Welcome to your dashboard </h2>
+
+
+<div class="choose an option">
+ <ul class = "list-group">
+    <div class = "col-md-8">
+    <h3 class = "list-group-item"> 1. Create a new trivia question <button (click) = "createtrivia" style="float: right;" [routerLink]="['/createtrivia']"> Create Trivia </button> </h3>
+    </div>
+
+    <div class = "col-md-8">
+    <h3 class = "list-group-item"> 2. Answer Trivia questions <button (click) = "answertrivia" style="float: right;" [routerLink]="['/answertrivia']"> Answer Trivia </button> </h3>
+    </div>
+
+    <div class = "col-md-8">
+    <h3 class = "list-group-item"> 3. View high user scores <button (click) = "viewstats" style="float: right;" [routerLink]="['/viewhighscores']"> View Stats </button> </h3>
+    </div>
+ </ul>
+</div>

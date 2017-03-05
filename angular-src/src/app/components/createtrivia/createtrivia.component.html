@@ -1,0 +1,22 @@
+<div class = "container">
+  <h1> Create some trivia questions</h1>
+
+  <p>Questions can be of any type. Categories like History, Science, Music, Sports, Entertainment... Difficulty type can be easy, medium, hard</p>
+
+  <table class = "table">
+    <thead>
+        <tr>
+            <th>Question</th>
+            <th>Category</th>
+            <th>Difficulty</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr ng-repeat = "question in questionlist">
+              <td> {{question.question}} </td>
+              <td> {{question.category}} </td>
+              <td> {{question.difficulty}} </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
