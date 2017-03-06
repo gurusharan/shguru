@@ -8,7 +8,9 @@ import { HomeComponent } from './home.component';
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-
+  let de: DebugElement;
+  let el: HTMLElement;
+  
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ HomeComponent ]

@@ -28,7 +28,7 @@ describe('LoginComponent', () => {
   de = fixture.debugElement.query(By.css('h1'));
   el = de.nativeElement;
 
-  it('should create', () => {
+  it('should create login', () => {
     expect(component).toBeTruthy();
   });
 });
