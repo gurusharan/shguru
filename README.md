@@ -38,7 +38,8 @@ c)View high scores of users.
 (vi)When a user chooses to create a trivia question, he is taken to that page where he is given the options of entering his question,
 category to which it belongs and the difficulty level with an option to add it(needs work-up on the functionality).
 (vii)When a user chooses to answer a trivia question, he is taken to that page where he is given a set of questions with their category type, difficulty level and an option to enter the answer of each question next to it(needs work-up on the functionality).
-(viii)View high scores of users were out of scope based on the status of my current project implementation.(Not implemented)
+(viii)View high scores of users were out of scope based on the status of my current project implementation.(Not implemented) 
+(ix)ports used on localhost for angular - http://localhost:4200/ for node - http://localhost:3000/ for mongo http://localhost:27017/
 
 6) Todo:
 (i)Fix the createtrivia page functionality and make it persistent with the database. Add update, edit, clear features to enhance usage.
