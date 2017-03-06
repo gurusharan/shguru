@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var passport = require('passport');
 var mongoose = require('mongoose');
+var mongojs = require('mongojs');
 var config = require('./config/database');
 
 //Connect to Database
@@ -57,10 +58,10 @@ app.get('*', (req, res) => {
 });
 
 //add trivia questions to database
-/*app.get('/createtrivia', function(req, res){
+app.get('/createtrivia', function(req, res){
     console.log("I received a get request");
     //res.json(createtrivia);
-});*/
+});
 
 //Start Server
 app.listen(port, function(req, res){

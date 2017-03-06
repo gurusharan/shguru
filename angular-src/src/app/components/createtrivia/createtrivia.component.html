@@ -1,7 +1,7 @@
 <div class = "container">
   <h1> Create some trivia questions</h1>
 
-  <p>Questions can be of any type. Categories like History, Science, Music, Entertainment... Difficulty type can be easy, medium, hard</p>
+  <p>Questions can be of any type. Categories like History, Science, Sports, Music, Entertainment... Difficulty type can be easy, medium, hard</p>
 
   <table class = "table">
     <thead>
@@ -9,14 +9,21 @@
             <th>Question</th>
             <th>Category</th>
             <th>Difficulty</th>
+            <th>Action</th>
         </tr>
       </thead>
       <tbody>
-          <tr ng-repeat = "question in questionlist">
-              <td> {{question.question}} </td>
-              <td> {{question.category}} </td>
-              <td> {{question.difficulty}} </td>
+          <tr>
+              <td><input class="form-control" ng-model="questionlist.question"> </td>
+              <td><input class="form-control" ng-model="questionlist.category"> </td>
+              <td><input class="form-control" ng-model="questionlist.difficulty"> </td>
+              <td><button class="btn btn-primary" ng-click="addQuestion()"> Add Question </button> </td>
           </tr>
+         <!-- <tr ng-repeat="question in questionlist">
+              <td>{{question.question}}</td>
+              <td>{{question.category}}</td>
+              <td>{{question.difficulty}}</td>
+          </tr> -->
       </tbody>
   </table>
 </div>
